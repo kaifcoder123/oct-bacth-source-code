@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia WEBPAGE</title>
+</head>
+<body>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+         margin: 20px;
+          background-image: url(ANS.avif);
+        }
+
+        h1{
+          color: blue;
+        }
+        
+        h2 {
+          color: blue;
+        }
+       
+        
+        
+        .icon {
+          width: 50%;
+          height: auto;
+          max-width: 200px;
+        }
+        canvas {
+            border: 1px solid black;
+          width: 100%;
+          max-width: 300px;
+          height: auto;
+        }
+        video, audio {
+          width: 100%;
+          max-width: 320px;
+        }
+        @media (max-width: 600px) {
+          .icon {
+            max-width: 100px;
+          }
+          canvas {
+            max-width: 200px;
+          }
+          video, audio {
+            max-width: 200px;
+          }
+        }
+    
+        iframe{
+            width: 100%;
+            max-width: 350px;
+        }
+      </style>
+    </head>
+    <body>
+        <h1>Multimedia webpage</h1>
+        <div class="main">
+      <ul>
+        <li>home</li>
+        <li>contact</li>
+        <li>about</li>
+      </ul>
+        </div>
+      
+        
+      <!-- Responsive SVG Icon -->
+      <h2>Responsive SVG Icon</h2>
+      <svg class="icon" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+        <title>SVG Circle and Square Icon</title> <!-- Accessibility -->
+        <circle cx="32" cy="32" r="30" stroke="black" stroke-width="2" fill="lightblue"/>
+        <rect x="14" y="14" width="36" height="36" stroke="black" stroke-width="2" fill="lightgreen"/>
+      </svg>
+    
+      <!-- Video with Custom Controls -->
+      <h2>Video with Custom Controls</h2>
+      <video controls aria-describedby="videoDescription">
+        <source src="bride.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <p id="videoDescription">This is a sample video file with custom controls.</p>
+    
+      <!-- Audio with Autoplay and Volume Control -->
+      <h2>Audio with Autoplay and Volume Control</h2>
+      <audio controls autoplay aria-describedby="audioDescription">
+        <source src="sample-12s.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+      </audio>
+      <p id="audioDescription">This is a sample audio file with autoplay and volume control.</p>
+    
+      <!-- Embed External Multimedia Content -->
+      <h2>Embedded External Content</h2>
+      <embed src="snippet.html" width="600" height="400" title="Multimedia WEBPAGE"/>
+    
+      <!--YOUTUBE-->
+    
+      <h2>YOU TUBE</h2>
+      <iframe width="350" height="400"
+      src="bride.mp4">
+    
+      </iframe>
+</body>
+</html>
